@@ -1,0 +1,19 @@
+=====
+Alright, should've seen this one coming! In just a few sentences, what's a library? *
+
+A library is a group of functions and declarations, exposed for use by other programs.
+Libraries can be used with the different programs and with the different processes running at the same time on the same computers.
+
+=====
+In just a few sentences, what role does #include <cs50.h> play when you
+write it atop some program? *
+
+This line give you access to different functions inside of CS50 library.
+For example functions like GetString(), GetInt, etc.
+
+=====
+In just a few sentences, what role does -lcs50 play when you pass it as a
+"command-line argument" to clang? *
+
+With -l key you set a CS50 library as an arguments to the linker.
+So after compiling a program with this key you can use all functions and methods inside it.
