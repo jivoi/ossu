@@ -1,0 +1,30 @@
+=====
+How does a while loop differ from a do-while loop? When is the latter particularly useful?
+
+while loop is a entry-controlled loop, it first check the condition then enter the body
+do-while loop first enter the body and then check the condition.
+
+the most important difference between while loop and do-while loop is that in do-while loop, the block of code is executed at least once.
+
+=====
+What does "undeclared identifier" usually indicate if outputted by clang?
+
+the most often it indicate of forgetting to include the header file that contains the function declaration, for example, <cs50.h> for getstring function.
+
+=====
+Why is the Caesar Cipher not very secure?
+
+the key space is very small.
+using a brute force method, one could easily try all (25) possible combinations in order to decrypt the message without initially knowing the key.
+
+=====
+What's a function?
+
+in programming, function a named section of a program that performs a specific task like GetString from
+cs50.h
+
+=====
+Why bother writing functions when you can just copy and paste code as needed?
+
+if programming there is a principle don't repeat yourself (DRY), and functions help you with it.
+it means that you can write good function once and use it forever in different project and not to rewrite it every time. it help you to save a lot of time.
