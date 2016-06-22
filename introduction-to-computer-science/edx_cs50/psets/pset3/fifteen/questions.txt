@@ -3,6 +3,12 @@ questions.txt
 Computer Science 50
 Problem Set 3
 
+1. Besides 4 × 4 (which are Game of Fifteen’s dimensions), what other dimensions does
+the framework allow?
+2. With what sort of data structure is the game’s board represented?
+3. What function is called to greet the player at game’s start?
+4. What functions do you apparently need to implement?
+
 0. TODO
 1. TODO
 2. TODO

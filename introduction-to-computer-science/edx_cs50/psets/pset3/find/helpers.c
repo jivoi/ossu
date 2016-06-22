@@ -30,11 +30,32 @@ bool search(int value, int values[], int n)
 {
     // TODO: implement a searching algorithm
     // linear search
-    for (int i = 0; i < n; i++)
+    // for (int i = 0; i < n; i++)
+    // {
+    //     if (values[i] == value)
+    //     {
+    //         return true;
+    //     }
+    // }
+
+    // binary search
+    int first = 0;
+    int last = n - 1;
+
+    while (last >= first)
     {
-        if (values[i] == value)
+        int mid = (first + last) / 2;
+        if (value == values[mid])
         {
             return true;
+        }
+        else if (value < values[mid])
+        {
+            last = mid - 1;
+        }
+        else if (value > values[mid])
+        {
+            first = mid + 1;
         }
     }
     return false;
@@ -46,5 +67,17 @@ bool search(int value, int values[], int n)
 void sort(int values[], int n)
 {
     // TODO: implement an O(n^2) sorting algorithm
+    for (int i = 1; i < n; i++)
+    {
+        for (int j = 0; j < n - i; j++)
+        {
+            if (values[j] > values[j + 1])
+            {
+                int tmp = values[j];
+                values[j] = values[j + 1];
+                values[j + 1] = tmp;
+            }
+        }
+    }
     return;
 }
